@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Classroom Enhancement By SunnyLo",
+  "version": "1.0.0",
+  "description": "Improves the experience of downloading Google Classroom attachments",
+  "browser_action": {
+    "default_icon": "logo.png"
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{d50c2a08-f83f-417a-b7a3-d462a9fca28a}"
+    }
+  },
+  "content_scripts": [{
+    "matches": [
+      "https://classroom.google.com/*"
+    ],
+    "js": ["lib/feather.min.js", "lib/sweetalert2@9.js", "content.js"],
+    "css": ["style.css"]
+  }],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "downloads",
+    "*://classroom.google.com/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
