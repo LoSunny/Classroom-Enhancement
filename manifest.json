@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Classroom Enhancement By SunnyLo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Improves the experience of downloading Google Classroom attachments",
   "browser_action": {
     "default_icon": "logo.png"
