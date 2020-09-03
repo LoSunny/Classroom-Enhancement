@@ -5,7 +5,7 @@ function loadAllA() {
   for (let i = 0; i < as.length; i++) {
     if (as[i].href.startsWith("https://drive.google.com/open") && as[i].dataset.domId == null && !as[i].classList.contains("classroomEnhancement")) {
       as[i].classList.add("classroomEnhancement");
-      as[i].insertAdjacentHTML("afterend", `<span class="fastDownload" data-id="${as[i].href.match(/id=(.+)&/)[1]}" data-name="${as[i].querySelectorAll(".A6dC2c.bKJwEd.VBEdtc-Wvd9Cc.zZN2Lb-Wvd9Cc")[0].textContent}"><i data-feather="download"></i></span>`)
+      as[i].insertAdjacentHTML("afterend", `<span class="fastDownload" data-id="${as[i].href.match(/id=(.+)&/)[1]}" data-name="${as[i].querySelectorAll(".bKJwEd.VBEdtc-Wvd9Cc.zZN2Lb-Wvd9Cc")[0].textContent}"><i data-feather="download"></i></span>`)
     }
   }
   feather.replace()
